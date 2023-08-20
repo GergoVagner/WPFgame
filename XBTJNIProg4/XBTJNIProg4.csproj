@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\mariobg.jpg" />
+    <None Remove="Images\marioblock.jpg" />
+    <None Remove="Images\mariocharacter.jpg" />
+    <None Remove="Images\mariocoin.jpg" />
+    <None Remove="Images\mariofinishflag.jpg" />
+    <None Remove="Images\supermariomenubg.png" />
+    <None Remove="Images\transparentmariocoin.png" />
+    <None Remove="Levels\Ltest.lvl" />
+    <None Remove="Levels\Lvl2.lvl" />
+    <None Remove="Levels\Lvl3.lvl" />
+    <None Remove="Levels\lvl4.lvl" />
+    <None Remove="supermariomenubg.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Images\mariobg.jpg" />
+    <EmbeddedResource Include="Images\marioblock.jpg" />
+    <EmbeddedResource Include="Images\mariocharacter.jpg" />
+    <EmbeddedResource Include="Images\mariocoin.jpg" />
+    <EmbeddedResource Include="Images\mariofinishflag.jpg" />
+    <EmbeddedResource Include="Levels\Lvl3.lvl" />
+    <EmbeddedResource Include="Levels\lvl4.lvl" />
+    <Resource Include="Images\supermariomenubg.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="supermariomenubg.png" />
+    <EmbeddedResource Include="Images\transparentmariocoin.png" />
+    <EmbeddedResource Include="Levels\Ltest.lvl" />
+    <EmbeddedResource Include="Levels\Lvl2.lvl" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.10" />
+    <PackageReference Include="MvvmLightLibsStd10" Version="5.4.1.1" />
+  </ItemGroup>
+
+</Project>
